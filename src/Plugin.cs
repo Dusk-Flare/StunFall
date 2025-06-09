@@ -47,7 +47,7 @@ sealed class Plugin : BaseUnityPlugin
     {
         orig(self, eu);
 
-        if(self.grabbedBy.Any(grasp => grasp.grabber is Lizard) && !OIinstance.LGP.Value)
+        if(self.grabbedBy.Any() && !OIinstance.LGP.Value)
         {
             return;
         }
